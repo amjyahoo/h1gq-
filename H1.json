@@ -29023,18 +29023,6 @@
               "deprecationReason": null
             },
             {
-              "name": "critical",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "critical_label",
               "description": null,
               "args": [],
@@ -29075,18 +29063,6 @@
               "deprecationReason": null
             },
             {
-              "name": "high",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "high_label",
               "description": null,
               "args": [],
@@ -29119,18 +29095,6 @@
               "deprecationReason": null
             },
             {
-              "name": "low",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "low_label",
               "description": null,
               "args": [],
@@ -29142,18 +29106,6 @@
                   "name": "String",
                   "ofType": null
                 }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "medium",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Int",
-                "ofType": null
               },
               "isDeprecated": false,
               "deprecationReason": null
