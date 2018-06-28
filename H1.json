@@ -29347,6 +29347,18 @@
               "deprecationReason": null
             },
             {
+              "name": "maximum",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "medium",
               "description": null,
               "args": [],
@@ -35283,6 +35295,16 @@
             },
             {
               "name": "critical",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Int",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "maximum",
               "description": null,
               "type": {
                 "kind": "SCALAR",
@@ -46980,4 +47002,3 @@
     }
   }
 }
-6/27/2018
