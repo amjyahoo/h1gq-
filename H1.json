@@ -4942,26 +4942,6 @@
               "deprecationReason": null
             },
             {
-              "name": "i_cannot_create_jira_webhook_reasons",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "LIST",
-                  "name": null,
-                  "ofType": {
-                    "kind": "ENUM",
-                    "name": "TeamCannotCreateJiraWebhookReasons",
-                    "ofType": null
-                  }
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "id",
               "description": null,
               "args": [],
@@ -28562,35 +28542,6 @@
           "possibleTypes": null
         },
         {
-          "kind": "ENUM",
-          "name": "TeamCannotCreateJiraWebhookReasons",
-          "description": "Different reasons why a team cannot create a jira webhook",
-          "fields": null,
-          "inputFields": null,
-          "interfaces": null,
-          "enumValues": [
-            {
-              "name": "CANNOT_VIEW",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "FEATURE_GATED",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "PROGRAM_PERMISSION_REQUIRED",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            }
-          ],
-          "possibleTypes": null
-        },
-        {
           "kind": "OBJECT",
           "name": "TeamDisplayOptions",
           "description": "Display options for a HackerOne team",
@@ -43489,22 +43440,6 @@
               "deprecationReason": null
             },
             {
-              "name": "report_id",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "SCALAR",
-                  "name": "ID",
-                  "ofType": null
-                }
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "was_successful",
               "description": null,
               "args": [],
@@ -47002,4 +46937,3 @@
     }
   }
 }
-7/3/2018
