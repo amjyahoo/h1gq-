@@ -34797,6 +34797,11 @@
             },
             {
               "kind": "OBJECT",
+              "name": "CreateStructuredScopePayload",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
               "name": "CreateTaxFormPayload",
               "ofType": null
             },
@@ -41906,11 +41911,30 @@
             {
               "name": "errors",
               "description": null,
-              "args": [],
+              "args": [
+                {
+                  "name": "types",
+                  "description": null,
+                  "type": {
+                    "kind": "LIST",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "ErrorTypeEnum",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": null
+                }
+              ],
               "type": {
-                "kind": "SCALAR",
-                "name": "Hash",
-                "ofType": null
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "OBJECT",
+                  "name": "ErrorConnection",
+                  "ofType": null
+                }
               },
               "isDeprecated": false,
               "deprecationReason": null
@@ -41926,10 +41950,32 @@
               },
               "isDeprecated": false,
               "deprecationReason": null
+            },
+            {
+              "name": "was_successful",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
             }
           ],
           "inputFields": null,
-          "interfaces": [],
+          "interfaces": [
+            {
+              "kind": "INTERFACE",
+              "name": "MutationResult",
+              "ofType": null
+            }
+          ],
           "enumValues": null,
           "possibleTypes": null
         },
