@@ -1157,6 +1157,11 @@
             },
             {
               "kind": "OBJECT",
+              "name": "HackerInvitationsProfile",
+              "ofType": null
+            },
+            {
+              "kind": "OBJECT",
               "name": "HackeronePayrollPayoutPreferenceType",
               "ofType": null
             },
@@ -1811,7 +1816,31 @@
               "deprecationReason": null
             },
             {
+              "name": "hacker_invitations_profile",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "OBJECT",
+                "name": "HackerInvitationsProfile",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "hackerone_triager",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "i_can_update_invitation_preferences",
               "description": null,
               "args": [],
               "type": {
@@ -5211,18 +5240,6 @@
             },
             {
               "name": "i_can_view_reports_resolved",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Boolean",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "i_can_view_resolution_time_by_severity",
               "description": null,
               "args": [],
               "type": {
@@ -31681,6 +31698,63 @@
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "inputFields": null,
+          "interfaces": [
+            {
+              "kind": "INTERFACE",
+              "name": "Node",
+              "ofType": null
+            }
+          ],
+          "enumValues": null,
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "HackerInvitationsProfile",
+          "description": "Invitation settings for users",
+          "fields": [
+            {
+              "name": "bounty_programs_only",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "id",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "SCALAR",
+                  "name": "ID",
+                  "ofType": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "receive_invites",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
                 "ofType": null
               },
               "isDeprecated": false,
