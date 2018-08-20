@@ -1840,7 +1840,7 @@
               "deprecationReason": null
             },
             {
-              "name": "i_can_update_invitation_preferences",
+              "name": "i_can_update_invitation_profile",
               "description": null,
               "args": [],
               "type": {
@@ -31749,6 +31749,18 @@
               "deprecationReason": null
             },
             {
+              "name": "managed_programs_only",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "min_bounty",
               "description": null,
               "args": [],
@@ -47586,13 +47598,39 @@
               "name": "invitation_preference",
               "description": null,
               "type": {
-                "kind": "NON_NULL",
-                "name": null,
-                "ofType": {
-                  "kind": "ENUM",
-                  "name": "InvitationPreferenceTypeEnum",
-                  "ofType": null
-                }
+                "kind": "ENUM",
+                "name": "InvitationPreferenceTypeEnum",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "receive_invites",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "bounty_programs_only",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "managed_programs_only",
+              "description": null,
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
               },
               "defaultValue": null
             },
